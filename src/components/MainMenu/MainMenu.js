@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from '../../logo.svg'
-import { BrowserRouter as Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function MainMenu() {
-
+console.log(Router);
     return(
 <nav className="mainMenu">
       <img src={logo} alt="logo React" width="150px"/>
