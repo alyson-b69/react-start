@@ -8,18 +8,18 @@ return(
         <h2>Introduction à Redux</h2>
         <div className="postInfos">
                 <div className="row justify-content-around">
-                    <div class="metaInfo">
+                    <div className="metaInfo">
                     <img src="https://github.com/EthernalSlayer/MarkdownCV/blob/master/anonymous02.jpg?raw=true" alt="Guillaume profil" /> 
                     &nbsp; 
                     Guillaume B.
                     </div>
-                    <div class="metaInfo">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div className="metaInfo">
+                    <i className="fa fa-clock-o" aria-hidden="true"></i>
                     &nbsp;
                     17 juillet 2020
                     </div>
-                    <div class="metaInfo">
-                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    <div className="metaInfo">
+                    <i className="fa fa-hashtag" aria-hidden="true"></i>
                     &nbsp;
                     Découvertes</div>
                 </div>
