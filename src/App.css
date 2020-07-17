@@ -8,8 +8,13 @@
   display:flex;
   background-color:#20232a;
   text-align:center;
-
+  position: fixed;
+  width: 100%;
+  top: 0;
+  opacity: 0.99;
 }
+
+
 
 .mainMenu ul{
   align-self:center;
@@ -42,6 +47,7 @@
   width:50%;
   margin:auto;
   margin-bottom:5%;
+  margin-top:160px;
 }
 
 h2{
@@ -65,4 +71,24 @@ cite{
   background-color: rgb(192, 225, 236);
     padding: 15px;
     border-left: solid 5px #05a2ce;
+}
+
+@media screen and (max-width: 900px) {
+  .mainMenu{
+    flex-direction:column;
+  }
+
+  .mainMenu img{
+    margin:auto;
+  }
+
+  .main{
+    width:90%;
+    text-align:left;
+    margin-top:220px;
+  }
+
+  .main img{
+    width:100%;
+  }
 }
