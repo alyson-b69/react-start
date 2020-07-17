@@ -34,6 +34,10 @@
 }
 
 /* MAIN CONTENT */
+
+.home{
+  text-align:center;
+}
 .main{
   width:50%;
   margin:auto;
