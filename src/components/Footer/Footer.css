@@ -1,0 +1,28 @@
+.footer{
+    background-color:#20232a;
+    color:#ffffff;
+    padding:2%;
+    display:flex;
+    justify-content:space-around;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a{
+    text-decoration:none;
+    color:#ffffff;
+    margin-bottom:2%;
+  }
+  
+  .footer a:hover{
+    cursor:pointer;
+    color:#61dafb;
+  }
+
+  .footer h3{
+    color: #999;
+    text-transform:uppercase;
+  }
