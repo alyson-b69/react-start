@@ -1,0 +1,50 @@
+
+/* MENU PRINCIPAL */
+
+.mainMenu{
+    display:flex;
+    background-color:#20232a;
+    text-align:center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.99;
+  }
+  
+  
+  .mainMenu ul{
+    align-self:center;
+    display:flex;
+  }
+  
+  .mainMenu li{
+    list-style-type: none;
+    font-weight:bold;
+    font-size:1.3em;
+    padding-left:2%;
+  }
+  
+  .mainMenu li a{
+    text-decoration:none;
+    color:#ffffff;
+  }
+  
+  .mainMenu li a:hover{
+    cursor:pointer;
+    color:#61dafb;
+  }
+
+
+
+
+@media screen and (max-width: 900px) {
+    .mainMenu{
+      flex-direction:column;
+    }
+  
+    .mainMenu img{
+      margin:auto;
+    }
+  
+   
+  }

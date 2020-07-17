@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Organiser from './components/Organiser/Organiser'
 import MainMenu from './components/MainMenu/MainMenu'
+import SideBar from './components/SideBar/SideBar'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <MainMenu />
       <div className="main">
+      <div className="mainContent">
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
@@ -24,7 +26,10 @@ function App() {
         </Route>
         
       </Switch>
+      </div>
+      <SideBar />
       </div> 
+      
       <Footer />
     </div>
   </Router>

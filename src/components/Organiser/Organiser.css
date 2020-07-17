@@ -1,0 +1,22 @@
+.orgImg{
+    text-align:center;
+}
+
+.orgImg img{
+    border-radius:10px;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}
+
+.organiser ul{
+    list-style:none;
+}
+
+.organiser ul li::before {
+    content: "•"; 
+    color: #05a2ce;
+    display: inline-block; 
+    width: 0.7em;
+    margin-left: -0.7em;
+    font-size:1.5em;
+}
+

@@ -1,0 +1,20 @@
+.sidebar{
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-left: solid 1px lightgray;
+}
+
+.sidebar h2{
+    font-size:2em;
+}
+
+@media screen and (max-width: 900px) {
+
+    .sidebar{
+        width:100%;
+        border:none;
+        text-align:center;
+    }
+
+}

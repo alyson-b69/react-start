@@ -1,4 +1,5 @@
 import React from 'react';
+import './Organiser.css';
 
 function Organiser(){
 
@@ -15,33 +16,48 @@ function Organiser(){
             Se concentrer sur l'architecture dès le démarrage, 
             c'est éviter de voir son projet devenir bazar-land au fur et à mesure de son développement.
             Cela permet également d'éviter son effondrement.</p>
-
+            <div className="orgImg">
             <img src="https://media.giphy.com/media/2ZFuPKWcSw16E/giphy.gif" alt="effondrement d'immeuble"/>
+            </div>
+            
             
 
             <h3>Le découpage des composants</h3>
-            <p>Une étape primordiale dans la gestion d'un projet react, c'est le découpage des composants.</p>
-            <p>Il faut </p>
-            
+            <p>Une étape primordiale dans la gestion d'un projet React, c'est le découpage des composants.
+            Grâce à cette étape, vous aurez déjà une idée de la structure de votre application, ce qui vous permettra de
+            visualiser plus facilement l'arborescence à venir.
+            </p>
+            <p>Par exemple, pour une TodoList (la fameuse), on peut imaginer le découpage suivant : </p>
+            <div className="orgImg">
+            <img src="https://miro.medium.com/max/700/1*7oEqqnISnLtM4I7vUVOOUw.jpeg" alt="découpage de la todoList" />
+            </div>
+
             <h3>Quelques approches d'architectures</h3>
             <p>React vous laisse totalement libres dans la manière d'architecturer votre projet. Néanmoins, on retrouve 2 approches relativement populaires :</p>
+            <ul>
             <li>Regrouper les fichiers par fonctionnalités / routes.</li>
             <li>Regrouper les fichiers par types.</li>
+            </ul>
             <p>Libre à vous d'opter pour l'approche que vous préférez, en accord avec votre équipe de dev.</p>
-
+            <p>Toujours dans le cadre de la TodoList, voici à quoi pourrait ressembler l'architecture :</p>
+            <div className="orgImg">
+            <img src="https://i.imgur.com/hH9ykNq.png" alt="Todolist Arborescence" />
+            </div>
 
             <h3>Le nommage des fichiers</h3>
-            <cite>"Nommez votre composant en ayant à l'esprit ce qu'il représente." Dan Abramov</cite>
+            <p className="quote">"Nommez votre composant en ayant à l'esprit ce qu'il représente."<br/> Dan Abramov</p>
           
             <p>Il est important de donner un nom explicite à vos fichiers, 
-            en évitant à tout prix les noms génériques tels que index.js.</p>
+            en évitant à tout prix les noms génériques tels que <code>index.js</code>.</p>
             <p>Une simple mais bonne raison : quand vous codez, vous ouvrez fatalement plusieurs fichiers, et si 
-            vous utilisez plusieurs index.js, vous avez vite fait de vous emmelez les pinceaux ! </p>
-      
+            vous utilisez plusieurs <code>index.js</code>, vous avez vite fait de vous emmelez les pinceaux ! </p>
+            <p>Question de bonne pratique, il convient d'utiliser la convention de nommage <strong>PascalCase </strong>  
+            pour vos composants React : les mots sont liés sans espace, et chaque mot commence par une Majuscule.</p>
+
             <h3>Le choix de l'extension des fichiers javascript</h3>
-            <p>Libre à vous d'utiliser .js ou .jsx pour l'extensions de vos fichiers javascript. 
-            Cependant, Facebook semble préconiser d’utiliser .js pour l’extension de vos fichiers.</p>
-            <p>Quoi qu'il en soit, restez constant, afin de ne pas avoir du .jsx et du .js au sein d'un même projet.</p>
+            <p>Libre à vous d'utiliser <code>.js</code> ou <code>.jsx</code> pour l'extensions de vos fichiers javascript. 
+            Cependant, Facebook semble préconiser d’utiliser <code>.js</code> pour l’extension de vos fichiers.</p>
+            <p>Quoi qu'il en soit, restez constant, afin de ne pas avoir du <code>.jsx</code> et du <code>.js</code> au sein d'un même projet.</p>
 
         </div>
     

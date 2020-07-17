@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../logo.svg'
+import './MainMenu.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function MainMenu() {
