@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import Organiser from './components/Organiser/Organiser'
 import MainMenu from './components/MainMenu/MainMenu'
 import SideBar from './components/SideBar/SideBar'
+import Redux from './components/Redux/Redux'
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route exact path="/organiser-son-projet">
         <Organiser />
+        </Route>
+        <Route exact path="/redux">
+        <Redux />
         </Route>
         
       </Switch>

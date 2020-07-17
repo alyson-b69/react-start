@@ -16,7 +16,9 @@ console.log(Router);
           <li>
             <Link to="/organiser-son-projet">Organiser son projet</Link>
           </li>
-       
+          <li>
+            <Link to="/redux">Redux</Link>
+          </li>
         </ul>
       </nav>
 

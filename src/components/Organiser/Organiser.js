@@ -6,6 +6,24 @@ function Organiser(){
     return(
         <div className="organiser">
             <h2>Pourquoi et comment organiser son projet React ?</h2>
+            <div className="postInfos">
+                <div className="row justify-content-around">
+                    <div class="metaInfo">
+                    <img src="https://miro.medium.com/fit/c/160/160/1*BtEzK0FjhA4mr7X5JAmPEQ@2x.jpeg" alt="Alyson photo" /> 
+                    &nbsp; 
+                    Alyson B.
+                    </div>
+                    <div class="metaInfo">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    &nbsp;
+                    17 juillet 2020
+                    </div>
+                    <div class="metaInfo">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    &nbsp;
+                    Bonnes pratiques</div>
+                </div>
+            </div>
             <p>Il faut bien l'avouer, lorsqu'on démarre l'apprentissage de React, 
             on se retrouve vite perdu au milieu de cette immense architecture contemporaine. </p>
             <p>Voyons ensemble comment s'organise tout ça...  </p>
@@ -18,7 +36,10 @@ function Organiser(){
             Cela permet également d'éviter son effondrement.</p>
             <div className="orgImg">
             <img src="https://media.giphy.com/media/2ZFuPKWcSw16E/giphy.gif" alt="effondrement d'immeuble"/>
+            <br/>
+            <span>Crédit Gif : <a href="https://media.giphy.com/" alt="site Giphy">Giphy</a></span>
             </div>
+            
             
             
 
@@ -45,7 +66,11 @@ function Organiser(){
             </div>
 
             <h3>Le nommage des fichiers</h3>
-            <p className="quote">"Nommez votre composant en ayant à l'esprit ce qu'il représente."<br/> Dan Abramov</p>
+            <p className="quote">
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i> Nommez votre composant en ayant à l'esprit ce qu'il représente. <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+
+                 <br/> 
+                 Dan Abramov</p>
           
             <p>Il est important de donner un nom explicite à vos fichiers, 
             en évitant à tout prix les noms génériques tels que <code>index.js</code>.</p>
@@ -60,10 +85,8 @@ function Organiser(){
             <p>Quoi qu'il en soit, restez constant, afin de ne pas avoir du <code>.jsx</code> et du <code>.js</code> au sein d'un même projet.</p>
 
 
-            <h3>Test pre</h3>
-            <pre>
-            import &#123; hasRoles &#125; from 'services/security/hasRoles'; 
-            </pre>
+            
+
         </div>
     
     )

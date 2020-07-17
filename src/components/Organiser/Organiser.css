@@ -1,3 +1,34 @@
+ h2{
+    text-align:center;
+}
+
+/* META INFOS*/
+
+.postInfos{
+    padding-bottom:2%;
+    margin-bottom:4%;
+    border-bottom: solid 1px lightgrey;
+}
+
+.metaInfo{
+    display:flex;
+    align-items:center;
+}
+
+.metaInfo .fa {
+    font-size:1.4em;
+}
+
+.metaInfo img{
+    width:50px;
+    border-radius:50%;
+}
+
+
+.metaInfo p{
+
+}
+
 .orgImg{
     text-align:center;
 }
@@ -5,7 +36,9 @@
 .orgImg img{
     border-radius:10px;
     box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+    margin-bottom:1%;
 }
+
 
 .organiser ul{
     list-style:none;

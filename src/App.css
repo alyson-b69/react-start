@@ -3,6 +3,24 @@
 }
 
 
+.row{
+  display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.justify-content-around {
+  -ms-flex-pack: distribute!important;
+  justify-content: space-around!important;
+  align-items: center;
+}
+
+
+
 /* MAIN CONTENT */
 
 .main{
@@ -27,6 +45,15 @@ h2{
   font-size:2.5em
 }
 
+.mainContent h2:after{
+  content: "";
+    display: block;
+    width: 20%;
+    height: 7px;
+    background-color: #05a2ce;
+    margin: 30px auto;
+}
+
 .main p{
   font-size:1.3em;
 }
@@ -40,6 +67,7 @@ h2{
   color:#05a2ce;
 }
 
+/* BALISES STYLISEES */
 .quote{
   box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
   border-left: 7px solid #05a2ce;
@@ -47,12 +75,16 @@ h2{
   margin-bottom: 20px;
 }
 
+.quote .fa{
+  font-size:1.4em;
+}
+
 code{
   font-family:monospace,serif;
   color:#05a2ce;
 }
 
-pre {
+.coding {
   font-size:1.4em;
   background-color: #f0f0f0;
   padding: 15px 20px;
@@ -60,15 +92,28 @@ pre {
   border-radius: 4px;
 }
 
+.coding p {
+  font-size:0.8em;
+  font-family:monospace,serif;
+}
+
+.coding p:before {
+  content : "| ";
+  margin-left: -0.5em;
+  font-weight:bold;
+  color:#05a2ce;
+}
+
+/* RESPONSIVE */
+
 @media screen and (max-width: 900px) {
 
   .main{
-    margin-top:220px;
     flex-direction:column;
 
   }
   .mainContent{
-    width:100%;
+    width:100% !important;
     text-align:left;
     margin-left:0;
     margin-right:0;
