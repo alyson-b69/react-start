@@ -3,6 +3,11 @@
     padding-left: 2%;
     padding-right: 2%;
     border-left: solid 1px lightgray;
+    text-align:center;
+}
+
+.sidebar img{
+    width:50%;
 }
 
 .sidebar h2{

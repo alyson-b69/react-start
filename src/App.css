@@ -52,6 +52,14 @@ code{
   color:#05a2ce;
 }
 
+pre {
+  font-size:1.4em;
+  background-color: #f0f0f0;
+  padding: 15px 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 900px) {
 
   .main{

@@ -13,10 +13,11 @@ return(
         </div>
         
         <div className="footerInfos">
+        <h3>Crédit</h3>
         <p>Réalisé avec <span role="img" aria-label="love">❤️</span></p>
         <p>By <a href="https://www.linkedin.com/in/alyson-bernabeu-08249a172/" alt="profil Linkedin d'Alyson" target="_blank" rel="noopener noreferrer">Alyson</a> & <a href="https://www.linkedin.com/in/guillaume-bento-aires-7623071a3/" alt="profil Linkedin de Guillaume" target="_blank" rel="noopener noreferrer">Guillaume</a></p>
         <a href="https://www.wildcodeschool.com/fr-FR" alt="Wild Code school" target="_blank" rel="noopener noreferrer">
-        <img src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959" alt="logo wild"/>
+        <img className="wild" src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959" alt="logo wild"/>
         </a>
         </div>
         

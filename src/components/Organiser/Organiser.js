@@ -14,7 +14,7 @@ function Organiser(){
             <p>Pour l'instant, nous ne codons que de mini-applications par le biais de React. Quelques petits fichiers, rien de bien lourd.
             Mais dans quelques mois, nos projets grossiront considérablement. 
             Se concentrer sur l'architecture dès le démarrage, 
-            c'est éviter de voir son projet devenir bazar-land au fur et à mesure de son développement.
+            c'est éviter de voir son projet devenir <strong>bazar-land </strong> au fur et à mesure de son développement.
             Cela permet également d'éviter son effondrement.</p>
             <div className="orgImg">
             <img src="https://media.giphy.com/media/2ZFuPKWcSw16E/giphy.gif" alt="effondrement d'immeuble"/>
@@ -27,7 +27,7 @@ function Organiser(){
             Grâce à cette étape, vous aurez déjà une idée de la structure de votre application, ce qui vous permettra de
             visualiser plus facilement l'arborescence à venir.
             </p>
-            <p>Par exemple, pour une TodoList (la fameuse), on peut imaginer le découpage suivant : </p>
+            <p>Par exemple, pour une <code>TodoList</code> (la fameuse), on peut imaginer le découpage suivant : </p>
             <div className="orgImg">
             <img src="https://miro.medium.com/max/700/1*7oEqqnISnLtM4I7vUVOOUw.jpeg" alt="découpage de la todoList" />
             </div>
@@ -59,6 +59,11 @@ function Organiser(){
             Cependant, Facebook semble préconiser d’utiliser <code>.js</code> pour l’extension de vos fichiers.</p>
             <p>Quoi qu'il en soit, restez constant, afin de ne pas avoir du <code>.jsx</code> et du <code>.js</code> au sein d'un même projet.</p>
 
+
+            <h3>Test pre</h3>
+            <pre>
+            import &#123; hasRoles &#125; from 'services/security/hasRoles'; 
+            </pre>
         </div>
     
     )
