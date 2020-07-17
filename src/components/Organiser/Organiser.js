@@ -8,18 +8,18 @@ function Organiser(){
             <h2>Pourquoi et comment organiser son projet React ?</h2>
             <div className="postInfos">
                 <div className="row justify-content-around">
-                    <div class="metaInfo">
-                    <img src="https://miro.medium.com/fit/c/160/160/1*BtEzK0FjhA4mr7X5JAmPEQ@2x.jpeg" alt="Alyson photo" /> 
+                    <div className="metaInfo">
+                    <img src="https://miro.medium.com/fit/c/160/160/1*BtEzK0FjhA4mr7X5JAmPEQ@2x.jpeg" alt="Alyson profil" /> 
                     &nbsp; 
                     Alyson B.
                     </div>
-                    <div class="metaInfo">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div className="metaInfo">
+                    <i className="fa fa-clock-o" aria-hidden="true"></i>
                     &nbsp;
                     17 juillet 2020
                     </div>
-                    <div class="metaInfo">
-                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    <div className="metaInfo">
+                    <i className="fa fa-hashtag" aria-hidden="true"></i>
                     &nbsp;
                     Bonnes pratiques</div>
                 </div>
@@ -37,7 +37,7 @@ function Organiser(){
             <div className="orgImg">
             <img src="https://media.giphy.com/media/2ZFuPKWcSw16E/giphy.gif" alt="effondrement d'immeuble"/>
             <br/>
-            <span>Crédit Gif : <a href="https://media.giphy.com/" alt="site Giphy">Giphy</a></span>
+            <span>Crédit Gif : <a href="https://media.giphy.com/media/2ZFuPKWcSw16E/giphy.gif" alt="site Giphy" target="_blank" rel="noopener noreferrer" >Giphy</a></span>
             </div>
             
             
@@ -67,7 +67,7 @@ function Organiser(){
 
             <h3>Le nommage des fichiers</h3>
             <p className="quote">
-            <i class="fa fa-angle-double-left" aria-hidden="true"></i> Nommez votre composant en ayant à l'esprit ce qu'il représente. <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <i className="fa fa-angle-double-left" aria-hidden="true"></i> Nommez votre composant en ayant à l'esprit ce qu'il représente. <i className="fa fa-angle-double-right" aria-hidden="true"></i>
 
                  <br/> 
                  Dan Abramov</p>

@@ -9,7 +9,7 @@ return(
         <div className="postInfos">
                 <div className="row justify-content-around">
                     <div class="metaInfo">
-                    <img src="https://github.com/EthernalSlayer/MarkdownCV/blob/master/anonymous02.jpg?raw=true" alt="Guillaume photo" /> 
+                    <img src="https://github.com/EthernalSlayer/MarkdownCV/blob/master/anonymous02.jpg?raw=true" alt="Guillaume profil" /> 
                     &nbsp; 
                     Guillaume B.
                     </div>
