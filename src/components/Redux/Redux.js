@@ -1,6 +1,7 @@
 import React from "react";
 import "./Redux.css";
 import modelFlux from '../../modelFlux.png';
+import shemaRedux from '../../shemaRedux.jpg';
 
 function Redux(){
 
@@ -54,13 +55,22 @@ return(
                 Expliquons un peu ces 3 principes. <br/>Une unique source de vérité car dans redux votre état se situe dans se qu'on appel un store et celui ci deviendra votre source de vérité pour tous vos composants. Tous vos états seront regroupés dans celui ci et tous vos composants pouront accéder au store. Vous l'aurrez vite compris c'est grâce a cela que Redux règle le problème citer dans l'introduction. Maintenant grâce a Redux vous n'aurrez plus de problème pour partager un état entre plusieurs composants isolés. <br/>L'état est en lecture seule signifie que avec Redux il ne faut pas changer l'état directement. Pour changer l'état il faudra utiliser des actions qui passeront par se qu'on appel un reducer. Quesqu'un reducer me direz vous ? Et bien en faite tu en as surrement déjà croiser en Vanilla JS. T'es tu déjà servi de la méthode ".reduce" de l'objet "Array" en JavaScript ? Et bien cette méthode prend souvent en argument un reducer. Dans notre situation le reducer de Redux est une fonction qui prend en argument l'état actuel et une action et nous renvoie un nouveau état. Voila comment l'on doit changer l'état avec Redux. <br/>Et enfin les changements d'état sont fait avec des fonctions pures (tu as également déjà dut croiser cette notion) sigifie qu'un reducer ne peut être qu'une fonction pure. Pour rappel une fonction pure ne doit pas modifier l'état mais rendre un nouveau état, de plus avec les mêmes paramètres elle doit toujours renvoyer un résultat identique (donc dans les faits sa veut dire que par exemple on ne peut pas utiliser un reducer avec du random car les résultat serait différents a chaque utilisation).
             </p>
             <h4>Shema de Redux:</h4>
+            <img src={shemaRedux} alt="shema de Redux" className="shemaReduxImg"></img>
 
-            <h3>Exemple image</h3>
-            <div className="orgImg">
-            <img src="https://media.giphy.com/media/2ZFuPKWcSw16E/giphy.gif" alt="effondrement d'immeuble"/>
-            </div>
+            <h3>Et l'organisation des fichiers dans tout sa ?</h3>
+            <p>
+                Sur ce point Redux est comme React donc tout se que tu as vue dans "organiser son projet" s'applique ici aussi. Cependant tu dispose de quelques petites choses en plus et tu doit surement te demander où dois je mettre mon store ? ou mettre mes reducers ? ou encore mes actions ? Et bien malheureusement comme pour React il n'y a pas de solution miracle le seul point commun que l'on retrouve a peu près partout c'est l'ajout d'un dossier "store" pour contenir ton store qui sera commun a toute l'application. Pour le reste tu peux sois créer un dossier pour les reducers et un dossier pour les actions ou alors mettre tes reducers et tes actions a l'interieur des fichiers des composants auqels ils sont reliés c'est a toi et ton équipe de décider. Personnelement je conseillerai de mettre les reducers et les actions avec leur composants respectifs mais je n'ai pour l'instant qu'une toute petite experience sur le sujet et aucun gros projets a mon actif donc mon avis changera peut être avec l'expérience.
+            </p>
 
-
+            <h3>Bonus :</h3>
+            <ul>
+                <li>
+                    Le nom de Redux vient de la contraction de deux mots "reducer" et "Flux".
+                </li>
+                <li>
+                    La légende raconte que Dan Abramov serait fan de la série "Charmed" et que le logo de Redux serait inspirer de celui des sorcières Halliwell
+                </li>
+            </ul>
     </div>
     
 )
