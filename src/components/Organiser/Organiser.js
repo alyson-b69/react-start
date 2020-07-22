@@ -25,8 +25,27 @@ function Organiser(){
                 </div>
             </div>
             <p>Il faut bien l'avouer, lorsqu'on démarre l'apprentissage de React, 
-            on se retrouve vite perdu au milieu de cette immense architecture contemporaine. </p>
-            <p>Voyons ensemble comment s'organise tout ça...  </p>
+            on peut très rapidement s'égarer au milieu de cette immense architecture contemporaine.</p>
+            <p>Commencons par étudier ensemble la structure de base, et adoptons dès à présent les bonnes pratiques...  </p>
+
+            <h3>Un template bien ficellé</h3>
+            <p>Lorsque l'on installe la petite bêbête sur nos machines, un dossier avec une multitudes de fichiers est créé. Il s'agit la de la structure de projet initiale.
+            </p>
+            <p>Cette dernière ne contient ni configuration, ni structures de dossiers compliquées, seulement les fichiers dont vous avez besoin pour créer votre application web.</p>
+            <p>Pour que le projet soit généré, ces fichiers doivent exister avec des noms de fichiers exacts :</p>
+            <ul>
+                <li>public / index.html est le modèle de page;</li>
+                <li>src / index.js est le point d'entrée JavaScript.</li>
+            </ul>
+                
+                
+            <p>Vous pouvez supprimer ou renommer les autres fichiers.</p>
+
+            <p>Vous pouvez créer des sous-répertoires dans src. Pour des reconstructions plus rapides, 
+            seuls les fichiers à l'intérieur de src sont traités par webpack. 
+            Vous devez mettre tous les fichiers JS et CSS dans src, sinon webpack ne les verra pas.</p>
+
+            <cite>NB : Seuls les fichiers à l'intérieur de public peuvent être utilisés à partir de public / index.html. </cite>
 
             <h3>Pourquoi opter pour une structure de projet ?</h3>
             <p>Pour l'instant, nous ne codons que de mini-applications par le biais de React. Quelques petits fichiers, rien de bien lourd.
@@ -56,14 +75,34 @@ function Organiser(){
             <h3>Quelques approches d'architectures</h3>
             <p>React vous laisse totalement libres dans la manière d'architecturer votre projet. Néanmoins, on retrouve 2 approches relativement populaires :</p>
             <ul>
-            <li>Regrouper les fichiers par fonctionnalités / routes.</li>
-            <li>Regrouper les fichiers par types.</li>
+            <li>Regrouper / séparer les fichiers par fonctionnalités / routes.</li>
+            <li>Regrouper / séprarer les fichiers par types.</li>
             </ul>
-            <p>Libre à vous d'opter pour l'approche que vous préférez, en accord avec votre équipe de dev.</p>
-            <p>Toujours dans le cadre de la TodoList, voici à quoi pourrait ressembler l'architecture :</p>
+            <p>Toujours dans le cadre de la TodoList, voici à quoi pourrait ressembler l'architecture qui regroupe les fichiers par fonctionnalités / routes :</p>
             <div className="orgImg">
             <img src="https://i.imgur.com/hH9ykNq.png" alt="Todolist Arborescence" />
             </div>
+            <p>Nous avons dans ce cas précis 2 dossiers :</p>
+            <ul>
+                <li>Le dossier containers : Il contient le dossier app, contenant le fichier app qui sert de conteneur à l'application web. </li>
+                <br/>
+                <cite> "A quoi sert-il ?", pourrez-vous me dire... 
+                Et bien je vous invite à lire cet article : <a href="https://medium.com/@learnreact/container-components-c0e67432e005" alt="container components">container components</a> </cite>
+                <br />
+                <li>Le dossier components : Il contient les dossiers Footer, New Tasks et Task, qui seront appelés dans notre conteneur.</li>
+            </ul>
+
+            <p>On retrouve égalements des approches telles que :</p>
+            <ul>
+            <li>Un seul fichier react</li>
+            <li>Regrouper / séprarer les fichiers par domaines</li>
+            <li>Et d'autres encore, l'imagination n'a pas de limites ;)</li>
+            </ul>
+
+            <p>Vous trouverez sur ce site les diverses structures possibles : <a href="https://www.robinwieruch.de/react-folder-structure" alt="react folder structure">robinwieruch</a></p>
+
+            <p>Libre à vous d'opter pour l'approche que vous préférez, en accord avec votre équipe de dev.</p>
+
 
             <h3>Le nommage des fichiers</h3>
             <p className="quote">
