@@ -83,6 +83,7 @@ function Organiser(){
             <img src="https://i.imgur.com/hH9ykNq.png" alt="Todolist Arborescence" />
             </div>
             <p>Nous avons dans ce cas précis 2 dossiers :</p>
+            <p></p>
             <ul>
                 <li>Le dossier containers : Il contient le dossier app, contenant le fichier app qui sert de conteneur à l'application web. </li>
                 <br/>
